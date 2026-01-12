@@ -1,0 +1,131 @@
+/* Kafunel Optimizer AI - Admin Styles */
+
+/* Media library column styling */
+.column-kafunel_optimization {
+    width: 150px;
+}
+
+.kafunel-optimize-btn {
+    margin-bottom: 5px;
+}
+
+.kafunel-status {
+    font-size: 11px;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.kafunel-status.optimized {
+    background-color: #d1f0d5;
+    color: #006505;
+}
+
+.kafunel-status.pending {
+    background-color: #f6f7f7;
+    color: #646970;
+}
+
+/* Settings page styling */
+.kafunel-settings .card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.kafunel-settings .card h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccd0d4;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Progress indicator */
+.kafunel-progress {
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.kafunel-progress-bar {
+    height: 100%;
+    background-color: #007cba;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* Bulk optimization styles */
+.kafunel-bulk-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.kafunel-bulk-actions .spinner {
+    float: none;
+    margin: 0;
+}
+
+/* Notification styles */
+.kafunel-notice {
+    padding: 12px;
+    margin: 15px 0;
+    border-left: 4px solid #007cba;
+    background-color: #f8f9f9;
+}
+
+.kafunel-notice.success {
+    border-left-color: #00a32a;
+    background-color: #f0f8f0;
+}
+
+.kafunel-notice.error {
+    border-left-color: #d63638;
+    background-color: #fef7f7;
+}
+
+/* Button states */
+button.kafunel-processing {
+    position: relative;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+button.kafunel-processing:after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive design */
+@media screen and (max-width: 782px) {
+    .column-kafunel_optimization {
+        width: 100%;
+    }
+    
+    .kafunel-optimize-btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
