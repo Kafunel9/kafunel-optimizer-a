@@ -1,0 +1,35 @@
+```
+# WordPress/WooCommerce plugin specific ignores
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# Cache and temporary files
+wp-content/cache/
+*.cache
+*.tmp
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PHP specific
+*.php~
+*.php.bak
+
+# Build/dist folders (if any)
+dist/
+build/
+```
